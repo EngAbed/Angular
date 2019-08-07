@@ -1,0 +1,26 @@
+<h3 class="container-title">Shipments</h3>
+<div class="table-container">
+      <table class="shipments-table">
+        <tr>
+          <th>Shipment #</th>
+          <th></th>
+          <th></th>
+          <th>Routing</th>
+          <th>Status</th>
+          <th>Create Date</th>
+          <th>Gross Weight</th>
+          <th class="last-th"></th>
+        </tr>
+        
+        <tr *ngFor="let shipment of shipments">
+          <td>{{ shipment.number }}</td>
+          <td class="icon-cell"><img src="assets/images/{{shipment.icon1}}.png"/></td>
+          <td class="icon-cell"><img src="assets/images/{{shipment.icon2}}.png"/></td>
+          <td>{{ shipment.routing }}</td>
+          <td class="{{ shipment.color_class }}">{{ shipment.status }}</td>
+          <td><span class="date">{{ shipment.date }}</span><span class="time">{{ shipment.time }}</span></td>
+          <td class="right-align-td">{{ shipment.gross_weight }}</td>
+          <td></td>
+        </tr>
+      </table>
+</div>

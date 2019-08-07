@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.menu-header{
+    padding-bottom:30px;
+    padding-left:5px;
+    padding-top:5px;
+    font-weight: 600;
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to left, #D9D9D9, #F6F6F6, #F6F6F6, #F6F6F6);
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    transition: width 0.6s;
+}
+.menu-opened{
+    width: 160px;
+}
+.menu-closed{
+    width: 36px;
+}
+.menu li a {
+    display: block;
+    color: #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menu li a.active {
+    background-image: linear-gradient(to left, #2085BB, #79B5D6, #79B5D6, #79B5D6);
+    color: white;
+}
+.menu li a:hover:not(.active) {
+    background-color: #DEE2E6;
+    background-image: linear-gradient(to left, #D9D9D9, #DEE2E6, #DEE2E6, #DEE2E6);
+}
+.main-container{
+    padding: 1px 16px;
+    transition: margin-left 0.6s;
+}
+.container{
+    margin-left: 160px;
+}
+.wide-container{
+    margin-left: 36px;
+}
+.option{
+    background-image: linear-gradient(to left, #D9D9D9, #F6F6F6, #F6F6F6, #F6F6F6);
+    white-space: nowrap;
+}
+.last-option{
+    border-bottom: 1px solid #EEEEEE;
+}
+.container-title{
+    color: #2085BB;
+}
+.table-container{
+    overflow-x:auto;
+    font-size: 12px;
+}
+.shipments-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.shipments-table th, .shipments-table td {
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #DEE2E6;
+}
+.shipments-table tr:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+.shipments-table th{
+    background-image: linear-gradient(to bottom, #D9D9D9, #F6F6F6, #F6F6F6);
+}
+.icon-cell{
+    width: 18px;
+}
+.time{
+    margin-left: 8px;
+    color: #808080;
+}
+.right-align-td{
+    text-align: right !important;
+}
+.last-th{
+    width: 20%;
+}
+.shipments-table td{
+    cursor: pointer;
+}
+.shipments-table tr:hover{
+    background-color: #E0F4FF;
+}
+.icon-cell img{
+    display: block;
+}
+.yellow-color{
+    color: #F8C775;
+}
+.green-color{
+    color: #6EE1A5;
+}
+.blue-color{
+    color: #6CBFE7;
+}
+.orange-color{
+    color: #F69E7A;
+}
+.green2-color{
+    color: #79CFAF;
+}
+.link-icon{
+    font-size: 1.5em !important;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-right: .25em;
+}
+.menu li a:not(.active) .link-icon{
+    color: #2085BB;
+}
+.menu-btn{
+    float: right;
+    padding-right: 8px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
